@@ -1,0 +1,55 @@
+1.Open Database Connectivity (ODBC) to protokół umożliwiający połączenie bazy danych programu Microsoft Access z zewnętrznym źródłem danych, takim jak program Microsoft SQL Server. Ten artykuł zawiera ogólne informacje na temat źródeł danych .
+2.Podczas tworzenia nowej bazy danych jest domyślnie używany nowy format pliku z rozszerzeniem accdb.
+3.Tabela bazy danych przypomina arkusz kalkulacyjny, ponieważ dane są przechowywane w kolumnach i wierszach. Główną różnicą między przechowywaniem danych w arkuszu kalkulacyjnym a przechowywaniem ich w bazie danych jest organizacja danych.
+
+
+Przygotowywanie zewnętrznego źródła danych  
+
+Konfigurowanie usług i kont programu SharePoint    
+
+Konfigurowanie usługi bezpiecznego magazynu    
+
+Konfigurowanie usługi łączności danych biznesowych   
+
+Tworzenie typu zawartości zewnętrznej    
+4.Aby pomóc chronić bazę danych programu Access przed nieautoryzowanym użyciem, można ją zaszyfrować, ustawiając hasło. Jeśli hasło zaszyfrowanej bazy danych jest znane, można ją odszyfrować i usunąć hasło. 
+
+W starszych wersjach programu Access można było tworzyć konta użytkowników i hasła za pomocą funkcji o nazwie „zabezpieczenia na poziomie użytkownika”
+
+.
+
+5.Nazwy obiektów programu Microsoft Access mogą mieć maksymalnie 64 znaki. Nazwy kontrolek mogą mieć maksymalnie 255 znaków. 
+6. . Gdy więc baza danych programu Access zostanie przeniesiona na wyższy poziom, możesz przeprowadzić migrację do programu SQL Server. Program SQL Server (lokalnie lub w chmurze platformy Azure) obsługuje większe ilości danych, więcej jednoczesnych użytkowników i ma większą pojemność niż aparat bazy danych JET/ACE. 
+7.Procesor
+dwurdzeniowy procesor 1,6 GHz
+
+System operacyjny
+Windows 11 i Windows 10
+
+Pamięć
+4 GB (wersja 64-bitowa), 
+
+Ilość wolnego miejsca na dysku
+4 GB dostępnego miejsca na dysku
+
+Wyświetlacz
+Rozdzielczość 1024 x 768
+
+Grafika
+Funkcja przyspieszenia sprzętowego grafiki w przypadku komputerów PC wymaga karty graficznej zgodnej z technologią DirectX 10
+8.poruwnywalny wyglaf interfejsu uzytkownikow, projektowanie bazy danych ,są one konkurencyjnymi bazami dancy
+ _______________________________________________________________________________________________________________________________
+1.Serwer MySQL jest bardzo chętnie wybierany jako baza danych dla wielu serwisów internetowych. Z biegiem czasu baza potrafi się rozrastać do kolosalnych rozmiarów. Poza przechowywaniem treści strony (artykuły, komentarze, lista użytkowników), zawiera również ustawienia samej strony czy aplikacji. W takim wypadku regularne robienie kopii zapasowej staje się wręcz koniecznością. Duża baza danych to również większe obciążenie dla serwera, który musi uporać się z zarządzaniem milionami rekordów. Remedium na wiele tego typu problemów może być replikacja.
+
+Serwer bazodanowy MySQL udostępnia bardzo ciekawy mechanizm replikacji. Czym on jest? W skrócie, dzięki replikacji każda zmiana na serwerze głównym (master), prowadzi do identycznej zmiany na serwerze zapasowym (slave). Replikacja pozwala nam na:
+
+Skalowalność – możliwe jest rozłożenie obciążenia pomiędzy wieloma serwerami. Operacje zapisu i aktualizacji rekordów odbywają się na jednym serwerze, a pobieranie i przeszukiwanie danych z drugiego.
+Bezpieczeństwo – dzięki replikacji tworzymy klona istniejącej bazy produkcyjnej. O ile nie uchroni nas to przed operacjami typu DROP TABLE, to może pomóc w przypadku awarii sprzętowej głównego serwera. Zreplikowana baza świetnie nadaje się do wykonywania tradycyjnego backupu, bez konieczności wstrzymywania pracy bazy głównej.
+Analiza – skomplikowane operacje analityczne, różnego rodzaju przeliczenia i analizy statystyczne mogą być wykonywane na osobnym serwerze bez konieczności obciążania głównej bazy.
+Separacja – możemy udostępnić klon bazy produkcyjnej dla developerów lub testerów, aby wykonali swoje prace na kopii bazy.
+2..sql
+3.INSERT: zezwala użytkownikowi na wprowadzanie rekordów do tabel; SELECT: zezwala użytkownikowi na wysyłanie zapytań do baz w celu odczytu zawartości; UPDATE: zezwala użytkownikowi na modyfikację rekordów zawartych w tabelach; GRANT OPTION: zezwala użytkownikowi na nadawanie oraz usuwanie uprawnień innym użytkownikom.
+4. grant SELECT
+5.select update delete drop 
+________________________________________________________________________________________________________________________________________________________
+
